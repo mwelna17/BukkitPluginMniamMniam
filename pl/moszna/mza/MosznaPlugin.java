@@ -30,7 +30,7 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 			playa.setHealth(playa.getHealth() / 2);
 			playa.setFoodLevel(0);
 			playa.setLevel(0);
-			playa.sendMessage(ChatColor.LIGHT_PURPLE + "Zostales zgwalcony przez Trynkiewicza!!!");
+			playa.sendMessage( "Zostales zgwalcony przez" + ChatColor.LIGHT_PURPLE + "Trynkiewicza!!!");
 		}
 		else if(command.getName().equalsIgnoreCase("Erekcja")){
 			Location loc = playa.getLocation();
