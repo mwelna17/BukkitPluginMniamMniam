@@ -24,8 +24,7 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 			this.getServer().broadcastMessage("MOSZNA");
 			playa.performCommand("thething");
 		}else if(command.getName().equalsIgnoreCase("iliketrains")){
-			playa.setHealth(0.9);
-			
+			playa.setHealth(0);
 		}
 		else if(command.getName().equalsIgnoreCase("Trynkiewicz")){
 			playa.setHealth(playa.getHealth() / 2);
@@ -74,14 +73,15 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 		}
 		return true;
 	}
-	
-	//@EventHandler
-	//public void onMove(PlayerMoveEvent event){
-		//Location loc = event.getPlayer().getLocation();
-	   // loc.setY(loc.getY() - 1);
-	   // Block b = loc.getBlock();
-	    //if (b.getType() != Material.AIR && b.getType() != Material.WATER && b.getType() != Material.LAVA && b.getType() != Material.SOUL_SAND && b.getType() != Material.LONG_GRASS) {
-		  //  b.setType(Material.SNOW_BLOCK); 	
-	    //}
+	/*
+	 @EventHandler
+	 public void onMove(PlayerMoveEvent event){
+	 Location loc = event.getPlayer().getLocation();
+	 loc.setY(loc.getY() - 1);
+	 Block b = loc.getBlock();
+	 if (b.getType() != Material.AIR && b.getType() != Material.WATER && b.getType() != Material.LAVA && b.getType() != Material.SOUL_SAND && b.getType() != Material.LONG_GRASS) {
+	 	b.setType(Material.SNOW_BLOCK);
+	 } 
+	 */
 	}
 
