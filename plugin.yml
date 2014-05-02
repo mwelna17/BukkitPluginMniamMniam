@@ -1,0 +1,32 @@
+name: TrynkiewiczPlugin
+main: pl.moszna.mza.MosznaPlugin
+version: 1.4.1
+description: Plugin na Trynkiewicza i wiele innych rzeczy!!!
+commands:
+  thething:
+    description: Podpal sie.
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  iliketrains:
+    description: Podpal sie.
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  trynkiewicz:
+    description: Podpal sie.
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  erekcja:
+    description: Podpal sie.
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  heal:
+    description: Wylecz sie
+    usage: Wrong fucking command
+  suicide:
+    description: Obejrzyj Suicide Mouse.avi
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  Spam:
+    description: Spamuj!!!
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  Suprise:
+    description: Niespodzianka!
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  Feed:
+    description: Mniam Mniam
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
