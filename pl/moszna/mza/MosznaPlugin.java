@@ -1,6 +1,7 @@
 package pl.moszna.mza;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -10,6 +11,8 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 public class MosznaPlugin extends JavaPlugin implements Listener{
 	public void onEnable(){
@@ -30,7 +33,7 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 			playa.setHealth(playa.getHealth() / 2);
 			playa.setFoodLevel(0);
 			playa.setLevel(0);
-			playa.sendMessage( "Zostales zgwalcony przez" + ChatColor.LIGHT_PURPLE + "Trynkiewicza!!!");
+			playa.sendMessage( "Zostales zgwalcony przez " + ChatColor.LIGHT_PURPLE + "Trynkiewicza" + ChatColor.RESET + "!!!");
 		}
 		else if(command.getName().equalsIgnoreCase("Erekcja")){
 			Location loc = playa.getLocation();
@@ -39,6 +42,7 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 		    b.setType(Material.WOOL);
 		    Block b2 = playa.getLocation().getBlock();
 		    b2.setType(Material.LEVER);
+		    
 		}
 		else if(command.getName().equalsIgnoreCase("heal")){
 		playa.setHealth(20);
@@ -55,21 +59,24 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 				playa.chat("Spam");
 				sint++;
 			}
-			 
-      
-				
-			}
-	
+		}
 		else if(command.getName().equalsIgnoreCase("Suprise")){
 			playa.setFoodLevel(0);
 			playa.setSneaking(isEnabled());
 			Location loc = playa.getLocation();
+			playa.playEffect(loc, Effect.MOBSPAWNER_FLAMES, null);
+			loc.setY(loc.getY() + 2);
 			playa.getWorld().spawnEntity(loc, EntityType.CREEPER);
-			
 		}
 		else if(command.getName().equalsIgnoreCase("Feed")){
 			playa.setFoodLevel(100);
 			playa.sendMessage("&eMniam Mniam&r");
+		}
+		else if(command.getName().equalsIgnoreCase("Water")){
+			Location loc = playa.getLocation();
+			Block b = loc.getBlock();
+			b.setType(Material.LAVA);
+			playa.sendMessage("Prosze, twoja wod-- znaczy sie " + ChatColor.DARK_RED + "lawa...");
 		}
 		return true;
 	}

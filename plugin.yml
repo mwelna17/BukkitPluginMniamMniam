@@ -30,3 +30,6 @@ commands:
   Feed:
     description: Mniam Mniam
     usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
+  Water:
+    description: FREE WATER!111!!!1 ONE ONE!!
+    usage: Zla skladnia! Po prostu wpisz /<komenda> aby sie podpalic.
