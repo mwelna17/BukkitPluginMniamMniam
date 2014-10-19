@@ -26,6 +26,7 @@ public class MosznaPlugin extends JavaPlugin implements Listener{
 			playa.performCommand("thething");
 		}else if(command.getName().equalsIgnoreCase("iliketrains")){
 			playa.setHealth(0);
+			playa.sendMessage("Zostales zgwalcony przez " + ChatColor.GREEN + "pociag")
 		}
 		else if(command.getName().equalsIgnoreCase("Trynkiewicz")){
 			playa.setHealth(playa.getHealth() / 2);
